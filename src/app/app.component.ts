@@ -9,12 +9,9 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class AppComponent {
 
-  private title: string;
-
   constructor(private translate: TranslateService) {
 
     this.initTranslation();
-    this.translate.get('title').subscribe(value => this.title = value);
   }
 
   initTranslation(): void{
