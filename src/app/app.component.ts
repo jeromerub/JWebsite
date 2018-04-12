@@ -20,4 +20,12 @@ export class AppComponent {
     this.translate.use(locale);
   }
 
+  switchLanguage(): void{
+    if(!this.translate.currentLang.localeCompare('en')) {
+      this.translate.use('fr');
+    } else {
+      this.translate.use('en');
+    }
+  }
+
 }

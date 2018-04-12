@@ -1,6 +1,7 @@
 # JWebsite
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4 but modified by me.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version _1.7.4_ but modified by me.<br />
+Angular version used _5.2.7_.
 
 ## Development server
 
@@ -26,3 +27,9 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Run in local the app
+
+`ng serve` build and run the app in localhost.<br />
+`npm install` and then `npm start` to simulate what it's happening in heroku platform. Open app in localhost:8080.
