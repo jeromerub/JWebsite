@@ -1,6 +1,15 @@
 {
-  "title": "Bienvenur sur le site Web de Jérôme",
+  "title": "Bienvenue sur le site Web de Jérôme",
   "generalMessage": "Le site arrive bientôt, un peu de patience!",
-  "buttonLanguage": "Changer de langue"
+  "buttonLanguage": "Changer de langue",
+  "navButton":{
+    "home": "Accueil",
+    "news": "Infos",
+    "skills": "Compétences",
+    "experiences": "Expériences",
+    "articles": "Articles",
+    "contacts": "Contacts",
+    "about": "A propos"
+  }
 
 }

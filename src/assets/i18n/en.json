@@ -1,5 +1,15 @@
 {
   "title": "Welcome to Jérôme Website",
   "generalMessage": "The whole website is coming soon!",
-  "buttonLanguage": "Switch language"
+  "buttonLanguage": "Switch language",
+  "navButton":{
+    "home": "Homepage",
+    "news": "News",
+    "skills": "Skills",
+    "experiences": "Experiences",
+    "articles": "Articles",
+    "contacts": "Contacts",
+    "about": "About"
+  }
+
 }

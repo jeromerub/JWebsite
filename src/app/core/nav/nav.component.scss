@@ -1,0 +1,38 @@
+@import "../../../styles/colors";
+@import "../../../styles/functions";
+
+:host(app-nav) {
+  padding-top: 0;
+  padding-bottom: 6.5rem;
+  display: grid;
+
+  header {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: $secondary--color;
+    height: 4rem;
+    background: $primary--color;
+
+    .mat-raised-button {
+      color: $secondary--color;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .nav-button:hover {
+      color: $red
+    }
+
+    .nav-button {
+      margin: 10px;
+    }
+
+  }
+}
