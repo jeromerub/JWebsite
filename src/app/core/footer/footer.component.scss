@@ -1,0 +1,11 @@
+@import "../../../styles/colors";
+
+footer {
+  padding: 10px 10px;
+  color: $secondary--color;
+  background: $blackTrans;
+  margin-top: 2rem;
+  position: sticky;
+  top: 100%;
+
+}

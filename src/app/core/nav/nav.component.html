@@ -1,30 +1,29 @@
 <header>
-  <nav>
-    <div fxFlex fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
-      <div fxFlex="40">
-        <a class="nav-button" *ngFor="let item of menuItems">
-          {{item}}
-        </a>
-      </div>
-    </div>
-    <div fxFlex class="text--right">
-      <button mat-icon-button [matMenuTriggerFor]="matmenu">
-        <mat-icon>public</mat-icon>
-      </button>
-      <mat-menu #matmenu="matMenu">
-        <button mat-menu-item (click)="changeLanguage('fr')">
-          <mat-icon>flag</mat-icon>
-          <span>
-                            Français
-          </span>
+  <nav class="nav-component">
+
+    <div>
+      <a class="nav-button" *ngFor="let item of menuItems">
+        {{item}}
+      </a>
+      <span>
+        <button mat-icon-button [matMenuTriggerFor]="matmenu">
+          <mat-icon>public</mat-icon>
         </button>
-        <button mat-menu-item (click)="changeLanguage('en')">
-          <mat-icon>flag</mat-icon>
-          <span>
-                            English
-          </span>
-        </button>
-      </mat-menu>
+        <mat-menu #matmenu="matMenu">
+          <button mat-menu-item (click)="changeLanguage('fr')">
+            <mat-icon>flag</mat-icon>
+            <span>
+                                Français
+              </span>
+          </button>
+          <button mat-menu-item (click)="changeLanguage('en')">
+            <mat-icon>flag</mat-icon>
+            <span>
+                                English
+              </span>
+          </button>
+        </mat-menu>
+      </span>
     </div>
 
   </nav>
