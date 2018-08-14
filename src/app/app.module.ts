@@ -7,9 +7,12 @@ import { AppComponent } from './app.component';
 
 import {SharedModule} from './shared/modules/shared.module';
 import {CoreModule} from './core/core.module';
+import {ComponentModule} from './components/component.module';
 
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {PagesModule} from "./pages/pages.module";
+import {AppRoutingModule} from "./app-routing.module";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -30,8 +33,11 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     }),
     SharedModule.forRoot(),
+    AppRoutingModule,
     CoreModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ComponentModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

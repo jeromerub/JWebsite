@@ -26,13 +26,13 @@ export class NavComponent implements OnInit {
   private loadMenus():void{
     this.translateService.get('navButton', {}).subscribe((texts: any) => {
       this.menuItems = [
-        texts.home,
-        texts.news,
-        texts.skills,
-        texts.experience,
-        texts.articles,
-        texts.contacts,
-        texts.about
+        {link: '/', name: texts.home},
+        {link: '/', name: texts.news},
+        {link: '/', name: texts.skills},
+        {link: '/', name: texts.experience},
+        {link: '/articles', name: texts.articles},
+        {link: '/', name: texts.contacts},
+        {link: '/', name: texts.about},
       ];
     });
 
@@ -40,3 +40,12 @@ export class NavComponent implements OnInit {
   }
 
 }
+
+// ['home','news','skills','experience','articles','contacts','about']
+// texts.home,
+//   texts.news,
+//   texts.skills,
+//   texts.experience,
+//   texts.articles,
+//   texts.contacts,
+//   texts.about
